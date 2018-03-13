@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* HEADER */
+header img{
+    width: 200px;
+}
+
+/* SEÇÃO BANNER */
+.banner{
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner div{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 60%;
+    padding: 0 30px;
+}
+
+.banner div p{
+    color: white;
+    font-size: 70px;
+}
+
+/* SEÇÃO ÍCONES */
+.icones{
+    margin-top: -6px;
+    text-align: center;
+    background-color: #efefef;
+}
+
+.icones .container{
+    display: flex;
+    margin: auto;
+    max-width: 80%;
+    margin: auto;
+}
+
+.icones i {
+    font-size: 60px;
+}
+
+/* SEÇÃO EVENTOS */
+.eventos{
+    margin-top: 30px;
+}
+
+.eventos .container{
+    display: flex;
+}
+
+.eventos .container img{
+    width: 50%;
+}
+
+.eventos .container div{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.eventos .container:nth-child(even) img{
+    order: 1;
+}
+
+/* SEÇÃO FORMULÁRIO */
+.formulario{
+    background-image: url(img/form.jpg);
+    overflow: auto;
+    margin-top: 30px;
+}
+
+.formulario div{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    width: 500px;
+}
+
+.formulario input{
+    width: 70%;
+    font-size: 18px;
+    border: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.formulario button{
+    width: 27%;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@media(max-width: 800px){
+    .banner div{
+        max-width: 100%;
+    }
+
+    .banner div p{
+        font-size: 50px;
+    }
+}
